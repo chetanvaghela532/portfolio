@@ -1,0 +1,168 @@
+-  Solo-built  and  shipped  a  privacy-focused  expiry  tracking  app  in  under  3  months  to  help  reduce  
+food/medicine
+ 
+waste
+ 
+—
+ 
+users
+ 
+track
+ 
+groceries,
+ 
+meds,
+ 
+cosmetics,
+ 
+and
+ 
+household
+ 
+items
+ 
+with
+ 
+smart
+ 
+tools.
+ -  Core  feature:  AI-powered  OCR  Date  Scanner  —  auto-detects  expiry  dates  from  item  photos  via  
+camera;
+ 
+supports
+ 
+bulk
+ 
+addition
+ 
+via
+ 
+Receipt
+ 
+Scanner
+ 
+(photo
+ 
+of
+ 
+shopping
+ 
+receipt).
+ -  Added  Barcode  Scanner  with  4M+  product  database  integration  for  quick  item  lookup  and  
+auto-fill.
+ -  Implemented  smart  reminders  —  customizable  notifications  before  expiry;  includes  voice  
+commands
+ 
+for
+ 
+hands-free
+ 
+adding
+ 
+(e.g.,
+ 
+"Add
+ 
+milk,
+ 
+expires
+ 
+in
+ 
+5
+ 
+days").
+ -  Designed  pixel-perfect,  responsive  UI/UX  in  Flutter  for  iOS  &  Android ;  included  offline  support,  
+reminders,
+ 
+and
+ 
+clean
+ 
+dashboards.
+ -  Handled  monetization  with  in-app  subscriptions  (monthly/yearly  Pro  tiers)  via  RevenueCat  for  
+premium
+ 
+features
+ 
+like
+ 
+full
+ 
+meal
+ 
+planning
+ 
+and
+ 
+coaching.
+ -  Deployed  to  App  Store  &  Google  Play  →  live  with  positive  early  feedback  on  effortless  tracking.  -  Tech  Stack :  Flutter,  Dart,  Bloc  (state  management),  Firebase  (Auth,  Firestore,  FCM  for  
+reminders),
+ 
+Camera/ML
+ 
+Kit
+ 
+or
+ 
+custom
+ 
+AI
+ 
+integration,
+ 
+RevenueCat,
+ 
+REST
+ 
+APIs.
+ 
+     App  Store:  https://apps.apple.com/us/app/expirely-expiry-date-tracker/id6757304445 
+Urban  India  -  Groceries  Online   (Flutter  +  GetX  +  Stripe)                                        June  2023  -  November  2025  -  Led  end-to-end  development  of  a  full  grocery  delivery  ecosystem  for  Canada  (Customer  App  +  
+Delivery
+ 
+Partner
+ 
+App)
+ -  Designed  and  implemented  a  full  Loyalty  &  Cashback  Program  –  users  earn  points  on  order  
+completion
+ 
+and
+ 
+redeem
+ 
+as
+ 
+percentage
+ 
+discount
+ 
+on
+ 
+next
+ 
+purchase
+ 
+(28%
+ 
+increase
+ 
+in
+ 
+repeat
+ 
+orders)
+ -  Integrated  with  checkout  flow  for  seamless  discount  application  -  Designed  &  built  pixel-perfect  UI/UX  in  Flutter ,  supporting  iOS  &  Android  -  Integrated  Stripe  for  secure  payments  +  inventory  sync  with  backend  -  Implemented  real-time  order  tracking  using  Firebase  Cloud  Messaging  -  Optimized  performance  —  reduced  app  size  30% ,  cut  crashes  85%  using  R8,  ProGuard,  
+Crashlytics
+ -  Deployed  to  Google  Play  &  App  Store  →  5K+  downloads ,  4.8 ★  rating  -  Tech  Stack :  Flutter,  Dart,  Riverpod,  Firebase,  Stripe  SDK,  REST  APIs, Loyalty  Program  &  Cashback  
+Flow
+ 
+     Play  Store:  play.google.com/store/apps/details->id=com.urbanindia 
+     App  Store:  https://apps.apple.com/in/app/urban-india/id6468866274 
+BuildIndia  ERP  –  Sales  &  Field  Operations  (Flutter  +  Firebase  +  Riverpod)      December  2024  -  August  2025  
+-  Led  development  of  enterprise  Flutter  ERP  for  500+  field  sales  users  -  Built  real-time  location  tracking  with  background  services,  Google  Maps ,  custom  markers,  
+geocoding
+ -  Designed  interactive  analytics  dashboard  (line/bar/pie/histogram)  with  monthly/quarterly  
+insights
+ -  Integrated  visit  planner,  selfie  verification,  task  assignment,  team  hierarchy,  prospect  CRM  
+ 

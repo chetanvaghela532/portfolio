@@ -1,0 +1,128 @@
+-  Reduced  app  size  by  30%  and  crash  rate  by  85%  via  Crashlytics,  R8,  and  multi-module  
+architecture.
+ -  Mentored  5  junior  developers  and  established  CI/CD  pipelines  (GitHub  Actions,  Fastlane)   Senior  Android  and  Flutter  Developer                                                                                June  2020  –  May  2023  Open  Source  Infotech  (Freelance  Developer)      -  Delivered  10+  apps  with  In-App  Subscriptions  and  VAST  audio  ads  -  Achieved  10M+  total  downloads  through  analytics-driven  optimization   Android  Engineer                                                                                                                         June  2019  –  May  2020  Bigscal  Technologies  -  Surat  -  Built  Healthray  App  modules  in  Kotlin  -  Consult  a  doctor  online  and  book  an  appointment/  Generate  Bill  /  Online  Report  /  Health  
+Measurement
+ 
+/
+ 
+Pay
+ 
+Online
+ 
+and
+ 
+Many
+ 
+more
+ 
+functionality.
+ -  App  Built  with  Kotlin,  MVVM  Architecture,  RxJava,  Retrofit,  Firebase,  Unit  Testing,  Coroutines.  -  Reduced  app  size  by  30%  using  asset  optimization   EDUCATION  
+B.Tech  Computer  Science  &  Engineering                                                                            August  2015  –  April  2019         Parul  University,  Vadodara,  Gujarat,  India  
+ 
+SELECTED  PROJECTS   
+Calry  AI  –  AI  Calorie  Counter   (Flutter  +  BLOC  +  Subscriptions)                                   November  2025  -  Present  
+-  Solo  end-to-end  development  and  launch  of  an  AI-driven  nutrition  app  in  under  3  months:  
+photo-based
+ 
+food
+ 
+recognition,
+ 
+barcode
+ 
+scanning,
+ 
+smart
+ 
+meal
+ 
+planner,
+ 
+daily
+ 
+logging,
+ 
+and
+ 
+personalized
+ 
+insights.
+ -  Implemented  advanced  AI  food  recognition  via  camera  —  users  snap  a  photo  of  any  meal  
+(including
+ 
+complex
+ 
+dishes/global
+ 
+cuisines)
+ 
+for
+ 
+instant
+ 
+calorie,
+ 
+macro
+ 
+(protein/carbs/fat),
+ 
+and
+ 
+nutrition
+ 
+estimation
+ 
+without
+ 
+manual
+ 
+entry.
+ -  Designed  pixel-perfect,  responsive  UI/UX  in  Flutter  for  iOS  &  Android ;  included  offline  support,  
+reminders,
+ 
+and
+ 
+clean
+ 
+dashboards.
+ -  Handled  monetization  with  in-app  subscriptions  (monthly/yearly  Pro  tiers)  via  RevenueCat  for  
+premium
+ 
+features
+ 
+like
+ 
+full
+ 
+meal
+ 
+planning
+ 
+and
+ 
+coaching.
+ -  Deployed  to  App  Store  &  Google  Play  →  live  with  positive  early  feedback  on  effortless  tracking.  -  Tech  Stack :  Flutter,  Dart,  Bloc  (state  management),  Firebase  (Auth,  Firestore,  FCM  for  
+reminders),
+ 
+Camera/ML
+ 
+Kit
+ 
+or
+ 
+custom
+ 
+AI
+ 
+integration,
+ 
+RevenueCat,
+ 
+REST
+ 
+APIs.
+ 
+     App  Store:  https://apps.apple.com/us/app/calry-ai-ai-calorie-counter/id6752832435 
+     Play  Store:  https://play.google.com/store/apps/details->id=com.calories.tracker.calryai 
+Expirely  –  Smart  Expiry  Date  Tracker  &  Inventory  Manager                                November  2025  -  Present  
+ 

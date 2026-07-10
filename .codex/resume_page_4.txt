@@ -1,0 +1,51 @@
+-  Tech  Stack:  Flutter,  Dart,  Riverpod,  Google  Maps,  Firebase,  REST  APIs,  FL  Chart       App  Store:  https://apps.apple.com/in/app/buildindia/id6738859658  Jazzbooks  Streaming  –  Jazz  Education  App  (Flutter  +  iOS)                                       March  2024  -  August  2025  
+-  Flutter  developer  for  iOS-only  jazz  education  app  used  by  2,000+  musicians  worldwide  -  Built  full  audio  streaming  platform  with  2,000+  real  musician  tracks.  -  Implemented  tempo  &  key  changer  —  users  adjust  playback  speed/pitch  in  real-time.  -  Integrated  dual-track  playback  (bass+drums  or  piano+drums)  using  AVFoundation  +  custom  
+audio
+ 
+engine.
+ -  Tech  Stack:  Flutter,  Dart,  AVFoundation,  Firebase  Analytics,  Clean  Architecture.       App  Store:  https://apps.apple.com/in/app/jazzbooks-streaming/id1667200133 
+ 
+Daily  Case  –  Advocate  Diary  App  (Flutter  +  BLOC  +  Node.js  Full-Stack)                May  2025  -  November  2025  -  Complete  lawyer  management  app  for  case  tracking,  client  billing,  and  court  reminders  -  Backend:  Node.js,  GraphQL  (Apollo),  PostgreSQL;  Hosted  on  Digital  Ocean  Droplets  -  Features:  Real-time  notifications,  document  vault,  RevenueCat  subscriptions  -  Published  on  Google  Play  Store  and  Apple  App  Store  -  Managed  entire  infra  (SSL,  auto-backups,  scaling)  –  95%  uptime     Play  Store:  https://play.google.com/store/apps/details->id=com.dailycase.advocate_diary 
+Aquaint  –  Enterprise  Food  Safety  &  Compliance  App  (Kotlin/XML)                      June  2023  -  November  2025  
+-  Large-scale  compliance  platform  for  restaurants  &  food  chains  (UK/Canada)  -  Modules:  Task  Management,  Temperature  Records  (Fridge/Freezer/Cellar),  Hot  Hold,  
+Cooking/Cooling
+ 
+Logs.
+ -  Compliance:  Refusal  Logs,  Accident/Incident,  Near  Miss,  Food  Delivery  Logs  -  Features:  Todo/Complete  tasks,  Reporting  dashboard,  Photo  evidence  upload  -  Built  with  Kotlin,  XML  layouts,  Room  DB,  WorkManager,  Firebase  
+     Play  Store:  play.google.com/store/apps/details->id=com.aquaint 
+Strimm  –  Smart  TV  Streaming  Platform  (Kotlin)                                                              June  2022  -  May  2023  -  Android  TV  /  Fire  TV  /  Smart  TV  app  with  IPTV  integration  -  Built  with  ExoPlayer,  Leanback,  MVVM;  1000+  active  users       Amazon  Appstore  links:  https://amazon.com/dp/B0CWH7D917, https://amazon.com/dp/B0CTCQ31DZ,  https://amazon.com/dp/B0CWJQ21H8  ABP  LIVE  –  India’s  First  Android  Auto  News  App                                                          May  2024  -  August  2025  
+-  Create  India’s  First  Android  Auto  News  App  is  Now  LIVE!.  -  Features  :   Listen  To  Handpicked  Podcasts,  Listen  To  LIVE  TV  While  You  Drive!,  Control  &  Listen  to  
+Podcasts
+ 
+at
+ 
+Your
+ 
+Own
+ 
+Listen
+ 
+Speed,
+ 
+50+
+ 
+Car
+ 
+Models
+ 
+&
+ 
+Stereos
+ 
+supported
+ 
+linked
+ 
+to
+ 
+Android
+ 
+Play.
+ -  Supports  VAST  audio  ads  between  all  the  podcasts.  -  This  will  increase  20%  user  engagement  from  listening  to  news  from  their  car  while  driving.  
+      Play  Store:  https://play.google.com/store/apps/details->id=com.abplive.auto.android 
+ 
