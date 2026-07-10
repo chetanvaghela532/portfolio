@@ -23,6 +23,10 @@ Required GitHub setting:
 - In the GitHub repository, open `Settings -> Pages`
 - Set `Source` to `GitHub Actions`
 
+Important:
+- This repository's workflow token may not have permission to create the Pages site automatically.
+- If the workflow fails with `Resource not accessible by integration`, enable GitHub Pages once manually in the repository settings, then rerun the workflow.
+
 After that, every push to `main` will publish the portfolio automatically.
 
 ## Resume asset

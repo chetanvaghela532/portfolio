@@ -1,9 +1,6 @@
 // Flutter imports:
 import 'package:flutter/material.dart';
 
-// Package imports:
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 // Project imports:
 import 'package:meu_curriculo_flutter/core/theme/app_tokens.dart';
 import 'package:meu_curriculo_flutter/core/utils/app_utils.dart';
@@ -118,14 +115,14 @@ class _ProjectCardState extends State<ProjectCard> {
                                       AppTokens.radiusSm,
                                     ),
                                   ),
-                                  child: FaIcon(
-                                    FontAwesomeIcons.folderOpen,
+                                  child: Icon(
+                                    Icons.folder_open_rounded,
                                     size: 20,
                                     color: tokens.primary,
                                   ),
                                 ),
-                                FaIcon(
-                                  FontAwesomeIcons.arrowUpRightFromSquare,
+                                Icon(
+                                  Icons.north_east_rounded,
                                   size: 13,
                                   color: tokens.muted,
                                 ),
@@ -194,8 +191,8 @@ class _ProjectCardState extends State<ProjectCard> {
                               widget.project.liveUrl!,
                               context: context,
                             ),
-                            icon: const FaIcon(
-                              FontAwesomeIcons.arrowUpRightFromSquare,
+                            icon: const Icon(
+                              Icons.north_east_rounded,
                               size: 14,
                             ),
                             label: Text(AppLocalizations.of(context)!.viewDemo),

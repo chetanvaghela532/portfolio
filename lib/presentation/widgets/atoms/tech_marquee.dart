@@ -1,43 +1,30 @@
-// Flutter imports:
 import 'package:flutter/material.dart';
 
-// Package imports:
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
-// Project imports:
 import 'package:meu_curriculo_flutter/core/theme/app_tokens.dart';
 
-/// Minimalist, auto-scrolling monochrome strip of tech logos.
-///
-/// Replaces the old scattered "magnetic" icons with a single tidy row that
-/// loops seamlessly. Icons are muted and uniform; the edges fade out so the
-/// strip reads as ambient texture rather than a busy focal point.
 class TechMarquee extends StatefulWidget {
   const TechMarquee({super.key});
 
-  // Cada ícone com a cor oficial da sua marca (usada no hover). Tons escolhidos
-  // para permanecer legíveis sobre o fundo escuro (tema padrão). Apple é
-  // monocromática, então usamos o cinza "silver" que aparece nos dois temas.
-  static const List<_TechIcon> _icons = [
-    _TechIcon(FontAwesomeIcons.flutter, Color(0xFF47C5FB)),
-    _TechIcon(FontAwesomeIcons.dartLang, Color(0xFF0175C2)),
-    _TechIcon(FontAwesomeIcons.react, Color(0xFF61DAFB)),
-    _TechIcon(FontAwesomeIcons.android, Color(0xFF3DDC84)),
-    _TechIcon(FontAwesomeIcons.swift, Color(0xFFF05138)),
-    _TechIcon(FontAwesomeIcons.apple, Color(0xFFA2AAAD)),
-    _TechIcon(FontAwesomeIcons.nodeJs, Color(0xFF8CC84B)),
-    _TechIcon(FontAwesomeIcons.js, Color(0xFFF7DF1E)),
-    _TechIcon(FontAwesomeIcons.java, Color(0xFFF89820)),
-    _TechIcon(FontAwesomeIcons.docker, Color(0xFF2496ED)),
-    _TechIcon(FontAwesomeIcons.database, Color(0xFF3ECF8E)),
-    _TechIcon(FontAwesomeIcons.gitAlt, Color(0xFFF05032)),
-    _TechIcon(FontAwesomeIcons.python, Color(0xFF4B8BBE)),
-    _TechIcon(FontAwesomeIcons.html5, Color(0xFFE34F26)),
-    _TechIcon(FontAwesomeIcons.css3, Color(0xFF1572B6)),
-    _TechIcon(FontAwesomeIcons.linux, Color(0xFFFCC624)),
+  static const List<_TechItem> _items = [
+    _TechItem('Flutter', Color(0xFF47C5FB)),
+    _TechItem('Dart', Color(0xFF0175C2)),
+    _TechItem('React', Color(0xFF61DAFB)),
+    _TechItem('Android', Color(0xFF3DDC84)),
+    _TechItem('Swift', Color(0xFFF05138)),
+    _TechItem('iOS', Color(0xFFA2AAAD)),
+    _TechItem('Node', Color(0xFF8CC84B)),
+    _TechItem('JS', Color(0xFFF7DF1E)),
+    _TechItem('Java', Color(0xFFF89820)),
+    _TechItem('Docker', Color(0xFF2496ED)),
+    _TechItem('SQL', Color(0xFF3ECF8E)),
+    _TechItem('Git', Color(0xFFF05032)),
+    _TechItem('Python', Color(0xFF4B8BBE)),
+    _TechItem('HTML', Color(0xFFE34F26)),
+    _TechItem('CSS', Color(0xFF1572B6)),
+    _TechItem('Linux', Color(0xFFFCC624)),
   ];
 
-  static const double _itemWidth = 64;
+  static const double _itemWidth = 92;
   static const double _height = 40;
 
   @override
@@ -66,7 +53,7 @@ class _TechMarqueeState extends State<TechMarquee>
   @override
   Widget build(final BuildContext context) {
     final tokens = AppColorTokens.of(context);
-    final rowWidth = TechMarquee._icons.length * TechMarquee._itemWidth;
+    final rowWidth = TechMarquee._items.length * TechMarquee._itemWidth;
 
     return ExcludeSemantics(
       child: SizedBox(
@@ -109,12 +96,12 @@ class _TechMarqueeState extends State<TechMarquee>
   Widget _buildRow(final AppColorTokens tokens) {
     return Row(
       mainAxisSize: MainAxisSize.min,
-      children: TechMarquee._icons
+      children: TechMarquee._items
           .map(
             (final item) => SizedBox(
               width: TechMarquee._itemWidth,
               child: Center(
-                child: _HoverIcon(item: item, tokens: tokens),
+                child: _HoverChip(item: item, tokens: tokens),
               ),
             ),
           )
@@ -123,32 +110,28 @@ class _TechMarqueeState extends State<TechMarquee>
   }
 }
 
-/// Pairs a tech logo with its official brand color.
-class _TechIcon {
-  const _TechIcon(this.icon, this.brand);
+class _TechItem {
+  const _TechItem(this.label, this.brand);
 
-  final FaIconData icon;
+  final String label;
   final Color brand;
 }
 
-/// A single marquee icon that lights up in its real brand color while hovered.
-class _HoverIcon extends StatefulWidget {
-  const _HoverIcon({required this.item, required this.tokens});
+class _HoverChip extends StatefulWidget {
+  const _HoverChip({required this.item, required this.tokens});
 
-  final _TechIcon item;
+  final _TechItem item;
   final AppColorTokens tokens;
 
   @override
-  State<_HoverIcon> createState() => _HoverIconState();
+  State<_HoverChip> createState() => _HoverChipState();
 }
 
-class _HoverIconState extends State<_HoverIcon> {
+class _HoverChipState extends State<_HoverChip> {
   bool _hovered = false;
 
   @override
   Widget build(final BuildContext context) {
-    // At rest the strip stays muted/monochrome; on hover the icon reveals its
-    // official brand color (JS yellow, TS/Docker blue, Swift orange, …).
     final color = _hovered ? widget.item.brand : widget.tokens.muted;
 
     return MouseRegion(
@@ -156,15 +139,33 @@ class _HoverIconState extends State<_HoverIcon> {
       onEnter: (final _) => setState(() => _hovered = true),
       onExit: (final _) => setState(() => _hovered = false),
       child: AnimatedScale(
-        scale: _hovered ? 1.25 : 1,
+        scale: _hovered ? 1.06 : 1,
         duration: AppTokens.motionFast,
         curve: AppTokens.motionCurve,
-        child: TweenAnimationBuilder<Color?>(
+        child: AnimatedContainer(
           duration: AppTokens.motionFast,
           curve: AppTokens.motionCurve,
-          tween: ColorTween(end: color),
-          builder: (final context, final animatedColor, final _) =>
-              FaIcon(widget.item.icon, size: 24, color: animatedColor),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+          decoration: BoxDecoration(
+            color: _hovered
+                ? widget.item.brand.withValues(alpha: 0.14)
+                : Colors.transparent,
+            borderRadius: BorderRadius.circular(AppTokens.radiusPill),
+            border: Border.all(
+              color: _hovered
+                  ? widget.item.brand.withValues(alpha: 0.55)
+                  : widget.tokens.border.withValues(alpha: 0.55),
+            ),
+          ),
+          child: Text(
+            widget.item.label,
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w700,
+              letterSpacing: 0.2,
+              color: color,
+            ),
+          ),
         ),
       ),
     );

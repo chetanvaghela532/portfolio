@@ -1,9 +1,15 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AppUtils {
-  static String assetUrl(final String assetPath) =>
-      Uri.base.resolve(assetPath).toString();
+  static String assetUrl(final String assetPath) {
+    final normalizedPath = assetPath.startsWith('assets/')
+        ? assetPath
+        : 'assets/$assetPath';
+    final publicPath = kIsWeb ? 'assets/$normalizedPath' : normalizedPath;
+    return Uri.base.resolve(publicPath).toString();
+  }
 
   static String _errorMessage(final Object error) {
     final text = error.toString();

@@ -141,7 +141,7 @@ class MockData {
     ProjectModel(
       title: 'Strimm - Smart TV Streaming Platform',
       description:
-      'Led a Smart TV streaming product across Android TV and Fire TV with IPTV integration, Leanback navigation, ExoPlayer playback, and a TV-first viewing experience for active streaming users.',
+          'Led a Smart TV streaming product across Android TV and Fire TV with IPTV integration, Leanback navigation, ExoPlayer playback, and a TV-first viewing experience for active streaming users.',
       techStack: ['Kotlin', 'ExoPlayer', 'Leanback', 'IPTV'],
       repoUrl: 'https://amazon.com/dp/B0CWH7D917',
       liveUrl: 'https://amazon.com/dp/B0CWH7D917',
